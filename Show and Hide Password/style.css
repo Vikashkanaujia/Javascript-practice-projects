@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(130deg,#2fa8d8,#28c413);
+}
+.password{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    background-color: #98dac6;
+    border-radius: 10px;
+}
+.password input{
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+    font-weight: 400;
+
+    border:0;
+    outline:0;
+    background-color: #98dac6;
+}
+.password img{
+    width: 35px;
+    cursor: pointer;
+    margin-left: 33px;
+}

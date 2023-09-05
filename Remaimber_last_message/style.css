@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Roboto:wght@100;300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&family=Roboto:wght@100;500&display=swap');
 
 
 *{
@@ -11,10 +11,12 @@
 
 }
 body{
-    background: linear-gradient(90deg,#a7dd50,#1d89bb);
+    background: linear-gradient(90deg,#a7dd50,#1e8cbe);
     width: 100%;
     height: 100vh;
     position: relative;
+
+
 }
 .main-div{
     background-color: #eceff0;
@@ -24,9 +26,57 @@ body{
     border-radius: 10px;
     text-align: center;
     position: absolute;
-    top: 50%;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2); 
+     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 
 }
+h4{
+    font-size:1.5rem;
+    margin-bottom:.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+form input{
+    margin: 10px 0;
+    outline: none;
+    border: 1px solid #1e8cbe;
+}
+form input.box{
+    width: 500px;
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+form input.button{
+    font-size: 1rem;
+    padding: 12px 20px;
+    background-color: #1d89bb;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media(max-width:600px){
+    .main-div{
+        width: 90%;
+    }
+}
+@media(min-width:800px){
+    .main-div{
+        width: 50%;
+    }
+}
